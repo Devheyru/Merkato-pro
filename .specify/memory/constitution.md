@@ -28,13 +28,13 @@
   Follow-up TODOs: None.
 -->
 
-# SuQmarket (Merkato-pro) Constitution
+# Merkato-pro Constitution
 
 ## Core Principles
 
 ### I. Code Quality & Architectural Integrity
 
-Every component of SuQmarket MUST adhere to strict code quality
+Every component of Merkato-pro MUST adhere to strict code quality
 standards enforced via automated tooling and review processes.
 
 - All web (Next.js) code MUST pass ESLint + Prettier checks with zero
@@ -80,7 +80,7 @@ adequate test coverage MUST NOT be merged.
 
 ### III. User Experience Consistency
 
-SuQmarket MUST deliver a cohesive, accessible, and responsive user
+Merkato-pro MUST deliver a cohesive, accessible, and responsive user
 experience across all three platforms (web, mobile, admin).
 
 - The web application MUST be fully responsive from 320px (mobile) to
@@ -103,7 +103,7 @@ experience across all three platforms (web, mobile, admin).
 
 ### IV. Performance Requirements
 
-SuQmarket MUST meet quantified performance targets as defined in the
+Merkato-pro MUST meet quantified performance targets as defined in the
 SRS. Performance regressions are treated as bugs with P1 priority.
 
 - Web pages MUST achieve Largest Contentful Paint (LCP) under 2.5
@@ -127,7 +127,7 @@ SRS. Performance regressions are treated as bugs with P1 priority.
 
 ### V. Security & Data Integrity
 
-SuQmarket handles financial transactions and personal data. Security
+Merkato-pro handles financial transactions and personal data. Security
 is non-negotiable and MUST be designed into every layer.
 
 - All data transmission MUST use TLS 1.2+ (HTTPS enforced). HTTP
@@ -152,7 +152,7 @@ is non-negotiable and MUST be designed into every layer.
 
 ## Technology Constraints
 
-The following technology decisions are binding for all SuQmarket
+The following technology decisions are binding for all Merkato-pro
 development and MUST NOT be deviated from without a constitution
 amendment.
 
@@ -186,7 +186,7 @@ amendment.
 ## Development Workflow
 
 All contributors MUST follow this workflow to ensure consistency
-and traceability across the SuQmarket codebase.
+and traceability across the Merkato-pro codebase.
 
 - **Feature branches**: All work MUST be done on feature branches
   created from `main`. Direct pushes to `main` are prohibited.
@@ -209,7 +209,7 @@ and traceability across the SuQmarket codebase.
 ## Governance
 
 This constitution is the authoritative source of project standards
-for SuQmarket (Merkato-pro). It supersedes all other practices,
+for Merkato-pro. It supersedes all other practices,
 informal agreements, and ad-hoc decisions.
 
 - **Amendments**: Any change to this constitution MUST be documented
@@ -232,4 +232,4 @@ informal agreements, and ad-hoc decisions.
 - **Guidance**: For runtime development guidance, refer to the
   current feature's plan.md and the Spec Kit workflow documents.
 
-**Version**: 1.0.0 | **Ratified**: 2026-05-17 | **Last Amended**: 2026-05-17
+**Version**: 1.0.1 | **Ratified**: 2026-05-17 | **Last Amended**: 2026-05-17
