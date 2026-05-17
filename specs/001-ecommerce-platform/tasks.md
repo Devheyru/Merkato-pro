@@ -14,16 +14,16 @@
 
 **Purpose**: Project initialization and monorepo structure
 
-- [ ] T001 Initialize Next.js 14 project with App Router in `web/` directory
-- [ ] T002 Initialize Flutter 3.x project in `mobile/` directory
-- [ ] T003 Initialize Supabase project with `supabase init` in `supabase/` directory
-- [ ] T004 [P] Configure ESLint + Prettier in `web/.eslintrc.json` and `web/.prettierrc`
-- [ ] T005 [P] Configure flutter_lints in `mobile/analysis_options.yaml`
-- [ ] T006 [P] Install web dependencies: @supabase/supabase-js, next-intl, tailwindcss, shadcn/ui in `web/package.json`
-- [ ] T007 [P] Install mobile dependencies: supabase_flutter, flutter_riverpod, go_router, flutter_localizations in `mobile/pubspec.yaml`
-- [ ] T008 [P] Configure Tailwind CSS in `web/tailwind.config.ts` with custom theme tokens
-- [ ] T009 [P] Create shared Edge Function utilities in `supabase/functions/_shared/cors.ts`, `response.ts`, `auth.ts`, `logger.ts`
-- [ ] T010 Create root layout with font loading and metadata in `web/app/layout.tsx`
+- [X] T001 Initialize Next.js 14 project with App Router in `web/` directory
+- [X] T002 Initialize Flutter 3.x project in `mobile/` directory
+- [X] T003 Initialize Supabase project with `supabase init` in `supabase/` directory
+- [X] T004 [P] Configure ESLint + Prettier in `web/.eslintrc.json` and `web/.prettierrc`
+- [X] T005 [P] Configure flutter_lints in `mobile/analysis_options.yaml`
+- [X] T006 [P] Install web dependencies: @supabase/supabase-js, next-intl, tailwindcss, shadcn/ui in `web/package.json`
+- [X] T007 [P] Install mobile dependencies: supabase_flutter, flutter_riverpod, go_router, flutter_localizations in `mobile/pubspec.yaml`
+- [X] T008 [P] Configure Tailwind CSS in `web/tailwind.config.ts` with custom theme tokens
+- [X] T009 [P] Create shared Edge Function utilities in `supabase/functions/_shared/cors.ts`, `response.ts`, `auth.ts`, `logger.ts`
+- [X] T010 Create root layout with font loading and metadata in `web/app/layout.tsx`
 
 ---
 
@@ -33,31 +33,31 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T011 Create users table migration with RLS policies in `supabase/migrations/00001_create_users.sql`
-- [ ] T012 [P] Create vendors table migration with RLS policies in `supabase/migrations/00002_create_vendors.sql`
-- [ ] T013 [P] Create categories table migration with RLS policies in `supabase/migrations/00003_create_categories.sql`
-- [ ] T014 [P] Create products table migration with RLS, full-text search GIN index in `supabase/migrations/00004_create_products.sql`
-- [ ] T015 [P] Create carts and cart_items tables migration with RLS in `supabase/migrations/00005_create_carts.sql`
-- [ ] T016 [P] Create orders and order_items tables migration with RLS in `supabase/migrations/00006_create_orders.sql`
-- [ ] T017 [P] Create payments table migration with RLS in `supabase/migrations/00007_create_payments.sql`
-- [ ] T018 [P] Create reviews table migration with RLS in `supabase/migrations/00008_create_reviews.sql`
-- [ ] T019 [P] Create notifications table migration with RLS in `supabase/migrations/00009_create_notifications.sql`
-- [ ] T020 [P] Create platform_settings table migration in `supabase/migrations/00010_create_platform_settings.sql`
-- [ ] T021 [P] Create audit_logs table migration (append-only, no update/delete RLS) in `supabase/migrations/00011_create_audit_logs.sql`
-- [ ] T022 [P] Create homepage_banners and wishlists tables migration in `supabase/migrations/00012_create_banners_wishlists.sql`
-- [ ] T023 Create comprehensive indexes migration in `supabase/migrations/00014_create_indexes.sql`
-- [ ] T024 Create seed data (categories, admin user, sample settings) in `supabase/migrations/00015_seed_data.sql`
-- [ ] T025 Push migrations to Supabase with `supabase db push`
-- [ ] T026 [P] Create Supabase client (browser) in `web/lib/supabase/client.ts`
-- [ ] T027 [P] Create Supabase client (server) in `web/lib/supabase/server.ts`
-- [ ] T028 [P] Create TypeScript types for all entities in `web/lib/types/database.ts`
-- [ ] T029 [P] Create Dart data models for User, Product, Category, Cart, Order in `mobile/lib/shared/models/`
-- [ ] T030 [P] Create Supabase service singleton in `mobile/lib/shared/services/supabase_service.dart`
-- [ ] T031 Create RBAC middleware for admin/vendor route protection in `web/app/middleware.ts`
-- [ ] T032 [P] Create i18n configuration with next-intl and English messages in `web/messages/en.json`
-- [ ] T033 [P] Create Flutter localization setup with English ARB in `mobile/lib/core/l10n/`
-- [ ] T034 [P] Create app theme (Material 3 + Cupertino) in `mobile/lib/core/theme/app_theme.dart`
-- [ ] T035 Create GoRouter navigation setup in `mobile/lib/core/router/app_router.dart`
+- [X] T011 Create users table migration with RLS policies in `supabase/migrations/00001_create_users.sql`
+- [X] T012 [P] Create vendors table migration with RLS policies in `supabase/migrations/00002_create_vendors.sql`
+- [X] T013 [P] Create categories table migration with RLS policies in `supabase/migrations/00003_create_categories.sql`
+- [X] T014 [P] Create products table migration with RLS, full-text search GIN index in `supabase/migrations/00004_create_products.sql`
+- [X] T015 [P] Create carts and cart_items tables migration with RLS in `supabase/migrations/00005_create_carts.sql`
+- [X] T016 [P] Create orders and order_items tables migration with RLS in `supabase/migrations/00006_create_orders.sql`
+- [X] T017 [P] Create payments table migration with RLS in `supabase/migrations/00007_create_payments.sql`
+- [X] T018 [P] Create reviews table migration with RLS in `supabase/migrations/00008_create_reviews.sql`
+- [X] T019 [P] Create notifications table migration with RLS in `supabase/migrations/00009_create_notifications.sql`
+- [X] T020 [P] Create platform_settings table migration in `supabase/migrations/00010_create_platform_settings.sql`
+- [X] T021 [P] Create audit_logs table migration (append-only, no update/delete RLS) in `supabase/migrations/00011_create_audit_logs.sql`
+- [X] T022 [P] Create homepage_banners and wishlists tables migration in `supabase/migrations/00012_create_banners_wishlists.sql`
+- [X] T023 Create comprehensive indexes migration in `supabase/migrations/00014_create_indexes.sql`
+- [X] T024 Create seed data (categories, admin user, sample settings) in `supabase/migrations/00015_seed_data.sql`
+- [X] T025 Push migrations to Supabase with `supabase db push`
+- [X] T026 [P] Create Supabase client (browser) in `web/lib/supabase/client.ts`
+- [X] T027 [P] Create Supabase client (server) in `web/lib/supabase/server.ts`
+- [X] T028 [P] Create TypeScript types for all entities in `web/lib/types/database.ts`
+- [X] T029 [P] Create Dart data models for User, Product, Category, Cart, Order in `mobile/lib/shared/models/`
+- [X] T030 [P] Create Supabase service singleton in `mobile/lib/shared/services/supabase_service.dart`
+- [X] T031 Create RBAC middleware for admin/vendor route protection in `web/app/middleware.ts`
+- [X] T032 [P] Create i18n configuration with next-intl and English messages in `web/messages/en.json`
+- [X] T033 [P] Create Flutter localization setup with English ARB in `mobile/lib/core/l10n/`
+- [X] T034 [P] Create app theme (Material 3 + Cupertino) in `mobile/lib/core/theme/app_theme.dart`
+- [X] T035 Create GoRouter navigation setup in `mobile/lib/core/router/app_router.dart`
 
 **Checkpoint**: Foundation ready — user story implementation can now begin
 
@@ -71,16 +71,16 @@
 
 ### Implementation for User Story 2
 
-- [ ] T036 [US2] Create auth layout with centered card design in `web/app/(auth)/layout.tsx`
-- [ ] T037 [P] [US2] Create registration page with email/password form in `web/app/(auth)/register/page.tsx`
-- [ ] T038 [P] [US2] Create login page with email/password + Google OAuth in `web/app/(auth)/login/page.tsx`
-- [ ] T039 [P] [US2] Create forgot password page in `web/app/(auth)/forgot-password/page.tsx`
-- [ ] T040 [US2] Create auth callback handler for OAuth/email verification in `web/app/(auth)/callback/route.ts`
-- [ ] T041 [US2] Create register-vendor Edge Function in `supabase/functions/register-vendor/index.ts`
-- [ ] T042 [P] [US2] Create Flutter auth feature: login screen in `mobile/lib/features/auth/screens/login_screen.dart`
-- [ ] T043 [P] [US2] Create Flutter auth feature: register screen in `mobile/lib/features/auth/screens/register_screen.dart`
-- [ ] T044 [US2] Create Flutter auth providers (Riverpod) in `mobile/lib/features/auth/providers/auth_provider.dart`
-- [ ] T045 [US2] Implement auth state listener and route guards in `mobile/lib/core/router/app_router.dart`
+- [X] T036 [US2] Create auth layout with centered card design in `web/app/(auth)/layout.tsx`
+- [X] T037 [P] [US2] Create registration page with email/password form in `web/app/(auth)/register/page.tsx`
+- [X] T038 [P] [US2] Create login page with email/password + Google OAuth in `web/app/(auth)/login/page.tsx`
+- [X] T039 [P] [US2] Create forgot password page in `web/app/(auth)/forgot-password/page.tsx`
+- [X] T040 [US2] Create auth callback handler for OAuth/email verification in `web/app/(auth)/callback/route.ts`
+- [X] T041 [US2] Create register-vendor Edge Function in `supabase/functions/register-vendor/index.ts`
+- [X] T042 [P] [US2] Create Flutter auth feature: login screen in `mobile/lib/features/auth/screens/login_screen.dart`
+- [X] T043 [P] [US2] Create Flutter auth feature: register screen in `mobile/lib/features/auth/screens/register_screen.dart`
+- [X] T044 [US2] Create Flutter auth providers (Riverpod) in `mobile/lib/features/auth/providers/auth_provider.dart`
+- [X] T045 [US2] Implement auth state listener and route guards in `mobile/lib/core/router/app_router.dart`
 
 **Checkpoint**: Users can register, log in, and authenticate across web and mobile
 
